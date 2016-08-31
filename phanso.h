@@ -1,3 +1,9 @@
+   /*   Sinh vien thuc hien: 
+   
+      Duong Thi Thuy        Pham Quang Thanh
+      Ngo Thi Duyen         Nguyen Ba Bao Tram
+      Dang Trung Kien       Tran Thi Thu Huong
+    */
     #ifndef _PhanSo_H
         #define _PhanSo_H
         class PhanSo
