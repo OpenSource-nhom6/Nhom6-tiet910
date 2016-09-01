@@ -1,4 +1,11 @@
-PhanSo.cpp
+/* Duong Thi Thuy         Pham Quang Thanh
+   Ngo Thi Duyen          Nguyen Ba Bao Tram
+   Dang Trung Kien        Tran Thi Thu Huong
+*/
+
+
+
+//PhanSo.cpp
 
        #include <iostream.h>
        #include"PhanSo.h"
