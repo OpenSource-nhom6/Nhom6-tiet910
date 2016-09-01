@@ -6,7 +6,7 @@ PhanSo.cpp
        {
            int r ;
            while (b != 0)
-            {
+           {
                 r = a%b ;
                 a = b ;
                b = r ;
@@ -17,21 +17,19 @@ PhanSo.cpp
        {
            this->Tu = tu ;
            this->Mau = mau ;
-          ToiGian();
+           ToiGian();
        }
        void PhanSo::Xuat() const
        {
            
            if(this->Mau == 0) cout << "Error \n" ;
-           else
-               if(this->Mau != 1)
-                   cout << Tu << "/" << Mau ;     
+           else if(this->Mau != 1) cout << Tu << "/" << Mau ;     
        }
-      PhanSo PhanSo::Chia(PhanSo b) const
+       PhanSo PhanSo::Chia(PhanSo b) const
        {
            
            //kq.Tu = Tu*b.Mau;
-          //kq.Mau = Mau*b.Tu;
+           //kq.Mau = Mau*b.Tu;
            //kq.ToiGian();
            //return kq;
            return PhanSo(this->Tu*b.Mau,this->Mau*b.Tu);
@@ -43,21 +41,22 @@ PhanSo.cpp
            Mau/= UCLN;
            if(Mau < 0)
            {
-               Tu = -Tu;
-               Mau = -Mau;
+              Tu = -Tu;
+              Mau = -Mau;
            }
        }
        void PhanSo::Nhap()
        {
            cout << "Tu So: " ; cin >> Tu ;
-           do {
-               cout << "Mau So (Khac 0): ";cin >> Mau ;
+           do
+           {
+              cout << "Mau So (Khac 0): ";cin >> Mau ;
            }
            while (Mau == 0);
            this->ToiGian();    
        }
        bool PhanSo::SoSanh(PhanSo b) const
-      {
+       {
            return this->Tu*b.Mau < this->Mau*b.Tu;
        }
        PhanSo PhanSo::Cong(PhanSo b) const
